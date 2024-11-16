@@ -1,4 +1,5 @@
 ## README for Assignment
+For sample output please download this zip file: https://drive.google.com/file/d/13VJkj24DIc_C_tZ0DhaGu_ZZNQqbMtmQ/view?usp=sharing
 
 ### 1. **Setup Instructions**
 
