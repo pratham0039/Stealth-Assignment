@@ -1,5 +1,4 @@
 ## README for Assignment
-For sample output please download this zip file: https://drive.google.com/file/d/13VJkj24DIc_C_tZ0DhaGu_ZZNQqbMtmQ/view?usp=sharing
 
 ### 1. **Setup Instructions**
 
@@ -139,9 +138,47 @@ During this process, some pages were blocking the request. I used headers to byp
 7. **`extract_url`** (Custom Script):
    - Purpose: A helper script that extracts URLs from a provided text input, specifically designed for PubMed URLs.
 
+### 6. **Optimized Version for better performance and scalability**
+
+An optimized version of the paper processing system is available in `file_with_optimizations.py`. This version includes:
+
+#### Enhanced Summarization Features:
+- TF-IDF based sentence importance scoring
+- Smart text chunking for large documents
+- Improved memory management
+- Caching of processed results
+
+#### Additional Dependencies for Optimized Version:
+```bash
+pip install nltk scikit-learn numpy
+```
+
+#### NLTK Setup:
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+
+#### Key Improvements:
+1. **Text Preprocessing/ Scalability challenges/ Solving challenges for Large Documents**:
+   - Uses TF-IDF scoring to identify important sentences
+   - Implements caching for sentence importance calculation
+   - Smart text chunking based on token limits
+   - Help us reducing OpenAI cost when we talk about scalability
+
+2. **Performance Features**:
+   - Caching of processed results
+   - Efficient memory usage
+   - Better handling of large documents
+   - Configurable parameters for customization
+
+
+
+
 ---
 
-### 5. **Configuration File** 
+### **Configuration File** 
 
 Requirements.txt file is in the code you can just use that to configure.
 
